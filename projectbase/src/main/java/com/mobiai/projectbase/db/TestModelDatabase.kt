@@ -1,0 +1,37 @@
+package com.mobiai.projectbase.db
+
+import android.content.Context
+
+/*
+@Database(entities = [ModelTestDB::class], version = 1)
+abstract class TestModelDatabase : RoomDatabase(){
+
+    abstract fun getModelTestDao () : ModelTestDao
+
+    companion object {
+        private var db: TestModelDatabase? = null
+
+        fun getInstance(context: Context): TestModelDatabase {
+            if (db == null) {
+                synchronized(TestModelDatabase::class) {
+                    if (db == null) {
+                        db = Room.databaseBuilder(
+                            context.applicationContext,
+                            TestModelDatabase::class.java,
+                            "heart.db"
+                        ).allowMainThreadQueries()
+                            .fallbackToDestructiveMigration()
+                            .build()
+                    }
+                }
+            }
+            return db!!
+        }
+
+        fun destroyInstance() {
+            db = null
+        }
+    }
+}
+val Context.testModelDB: ModelTestDao get() = TestModelDatabase.getInstance(applicationContext).getModelTestDao()
+*/
